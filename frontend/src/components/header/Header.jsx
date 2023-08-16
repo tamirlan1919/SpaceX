@@ -16,7 +16,7 @@ const Header = () => {
   
     const fetchMenuData = async () => {
       try {
-        const response = await axios.get('http://cj60184-django-kwris.tw1.ru/api/menu/?format=json');
+        const response = await axios.get('https://cj60184-django-kwris.tw1.ru/api/menu/?format=json');
         setMenuData(response.data);
       } catch (error) {
         console.error('Error fetching menu data:', error);
