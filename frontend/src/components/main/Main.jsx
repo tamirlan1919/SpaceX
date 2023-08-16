@@ -10,7 +10,7 @@ const Main = () => {
     
       const fetchAdvantagesData = async () => {
         try {
-          const response = await axios.get('http://cj60184-django-kwris.tw1.ru/api/advantages/?format=json');
+          const response = await axios.get('https://cj60184-django-kwris.tw1.ru/api/advantages/?format=json');
           setAdvantagesData(response.data);
         } catch (error) {
           console.error('Error fetching advantages data:', error);
